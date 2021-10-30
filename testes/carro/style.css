@@ -1,0 +1,68 @@
+@keyframes carro {
+    from {
+        transform: translateY(180%) scale(1);
+        
+    }
+
+    to {
+        transform: translate(-43%) scale(0.3)
+    }
+}
+
+@keyframes fade {
+    from {
+        transform: translateX(50px) translateY(45px);
+        opacity: 0.6;
+    }
+
+    to {
+        transform: translateX(500px) translateY(0px);
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('imagens/céu.jpg');
+    background-size: 100%;
+    position: relative;
+
+}
+
+.carro {
+    position: absolute;
+    transform: translateY(140%);
+    left: 58%;
+
+    width: 300px;
+    height: 300px;
+
+   
+    animation: carro 8s linear infinite;
+   
+}
+
+
+
+.estrada {
+    width: 110%;
+    z-index: 2;
+}
+
+#sol {
+    opacity: 0.6;
+    animation: fade 10s ease infinite;
+    position: absolute;
+    top: 0%;
+    left: 40%
+}
+
+.sol {
+    display: block;
+    width: 100px;
+    height: 100px;
+}

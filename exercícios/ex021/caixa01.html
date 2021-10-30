@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modelo de Caixas</title>
+
+        <style>
+            @font-face {
+                font-family: 'Game';
+                src: url('fontes/Fipps-Regular.otf') format('opentype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+           @font-face {
+               font-family:'Cakee';
+               src: url('fontes/Gothic_Birthday_Cake.otf') format('opentype'), url('fontes/Gothic_Birthday_Cake.ttf') format('truetype')
+           }
+            body {
+                font-size: 16px;
+                font-family: 'Viking',Verdana, Geneva, Tahoma, sans-serif;
+
+            }
+
+            main {
+                text-align: center;
+                background-color: bisque;
+                width: 650px;
+                margin: auto;
+                padding: 10px;
+                border-width: 0.5px;
+                border-style: solid;
+                border-color:rgb(124, 47, 16);
+                border-radius: 10px;
+                box-shadow: 2px 2px 8px rgb(173, 67, 24);
+            }
+
+            h1 {
+                font-family: 'Cakee';
+                text-align: center;
+
+                width: 400px;
+                height: 150px;
+
+                border: 0.2em dashed red;
+
+                padding: 10px; 
+
+                margin: 20px auto 40px auto;
+
+                outline: 0.2em dotted chocolate;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(233, 90, 34);
+            }
+
+            a:hover {
+                color: aquamarine;
+
+            }
+
+            a:visited {
+                color:blueviolet;
+            }
+
+            p {
+                padding-top: 20px;
+                text-align: justify;
+                margin: auto;
+                
+            }
+
+            div {
+                width: 100px;
+                margin: auto;
+            }
+
+            div:hover {
+                color: darkorange;
+                
+            }
+
+            div > p {
+                display: none;
+            }
+
+            div:hover > p {
+                display: block;
+                color: chartreuse;
+                background-color: crimson;
+                text-align: center;
+                padding-bottom: 20px;
+
+                margin-block-end: 2em;
+    
+            }
+
+            .tamanho {
+                width: 400px;
+            }
+
+          
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Exemplo de caixa <em>box-level</em></h1>
+            <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caisas inline-level</a>. Vamos ver na prática como isso funciona. </p>
+
+            <div>
+                Clique aqui 
+                <p class="tamanho">Parabéns! Você encontrou o texto escondido!</p>
+            </div>
+        </main>
+
+        <p><a href="caixa02.html" target="_self" rel="next">Ir para a próxima página</a>.</p>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to right, #a703aa, #A903F1, #c156f0, #d09ae7);
+}
+
+header {
+    background-color: #F90A8E;
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    
+}
+
+#navbar-container {
+    width: 600px;
+    text-align: left;
+    margin-left: 730px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+}
+
+header > h1 {
+    padding: 15px 10px 15px 40px;
+}
+
+.navbar {
+    text-align: right;
+}
+
+.navbar > a {
+    margin-left: 15px;
+    padding: 15px 15px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar > a:hover {
+    color: aqua;
+}
+
+main {
+    width: 700px;
+    margin: auto;
+    background-color: #f3339d;
+    border-radius: 0px 30px;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.288);
+}
+
+.texto-principal {
+    margin-right: 240px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.noticia {
+    display: inline-block;
+    background-color: #ffccba;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px #9c6d5d;
+    margin-bottom: 20px;
+
+}
+
+.noticia1 {
+    background-color: #ffccba;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px #9c6d5d;
+
+}
+
+aside {
+    height: 100px;
+}
+
+.perifa {
+    display: inline-block;
+    width: auto;
+    margin-left: 500px;
+    margin-bottom: 20px;
+    background-color: #E49273;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+.links > p > a {
+        text-decoration: none;
+        color: #FA0A8E;
+}
+
+.links > p > a:hover {
+    color: rgb(1, 209, 209);
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    margin-top: 35px;
+    text-align: center;
+}
+
+footer > p {
+    text-align: center;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: aqua;
+    text-decoration: none;
+}
+
+div#bola {
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(to right, rgb(38, 127, 228), blue);
+    margin: 30px;
+    border-radius: 50%;
+}
+
+#bola > p {
+    margin-top: 40px;
+    padding: 80px 40px 40px 50px;
+    width: 150px;
+    font-family: cursive;
+}

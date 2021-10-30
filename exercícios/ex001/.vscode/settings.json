@@ -1,0 +1,8 @@
+{
+    "editor.wordWrap": "on",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingDelete": "never",
+    "editor.autoClosingOvertype": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoIndent": "none"
+}

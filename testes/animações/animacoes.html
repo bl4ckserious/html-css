@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animações</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            .fundo {
+                width: 100px;
+                height: 100px;   
+            }
+
+            .fundo:hover {
+                animation-play-state: paused;
+            }
+
+            .animationFadeIn {
+                animation: FadeIn 2s linear;
+            }
+
+            @keyframes FadeIn {
+                from {opacity: 0};
+                to {opacity: 1};
+            }
+
+            .animationFadeOut {
+                /*Poderia colocar 'opacity: 0;', mas vou configurar o 'fill-mode'*/
+                animation: FadeIn 2s linear;
+
+                animation-direction: reverse; /* A mesma animação, mas com direção invertida */
+
+                animation-fill-mode: forwards;
+            }
+
+            .piscando {
+                animation: pisca 2s linear infinite ;
+                color: black;
+            }
+
+            @keyframes pisca {
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0.2;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            .spinner {
+                border-radius: 50%;
+            }
+
+            @keyframes rotate {
+                from {
+                    transform: rotateZ(0deg);
+                }
+
+                to {
+                    transform: rotateZ(360deg);
+                }
+            }
+
+            .animationSpinner {
+                animation: rotate 2s linear infinite;
+            }
+
+            .animationSpinnerEase {
+                animation: rotate 2s ease infinite;
+            }
+
+            .animationSpinnerEaseOut {
+                animation: rotate 2s ease-out infinite;
+            }
+
+            .PositionBox {
+                width: 100%;
+                height: 300px;
+                background-color: #444;
+                position: relative;
+            }
+
+            .animationPosition {
+                position: absolute;
+                animation: position 4s linear infinite;
+                animation-direction: alternate-reverse;
+                
+            }
+
+            @keyframes position {
+                0% {
+                    top: 0;
+                    left: 0;
+                }
+
+                25% {
+                    top: 0;
+                    left: calc(100% - 100px);
+                }
+
+                50% {
+                    top:calc(100% - 100px);
+                    left: calc(100% - 100px);
+                }
+
+                75% {
+                    top: calc(100% - 100px);
+                    left: 0;
+                }
+
+                100% {
+                    top: 0;
+                    left: 0;
+                }
+            }
+
+            .animationContent::after {
+                content: '';
+                animation: promocao 3s linear infinite;
+            }
+
+            @keyframes promocao {
+                0% {
+                    content: 'Promoção';
+                }
+
+                25% {
+                    content: '';
+
+                }
+
+                50% {
+                    content: 'Frete Grátis';
+                }
+
+                100% {
+                    content: '';
+
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Animações</h1>
+
+        <h2>Fade</h2>
+        <section>
+            <div class="fundo blue animationFadeIn">Azul</div>
+            <div class="fundo green animationFadeOut">Verde</div>
+            <div class="fundo yellow piscando">Amarelo</div>
+        </section>
+
+        <hr>
+
+        <h2>Spinners</h2>
+        <section>
+            <div class="fundo spinner blue animationSpinner">Linear</div>
+            <div class="fundo spinner green animationSpinnerEase">Ease</div>
+            <div class="fundo spinner gray animationSpinnerEaseOut">EaseOut</div>
+        </section>
+
+        <hr>
+        
+        <h2>Positions</h2>
+        <section class="PositionBox">
+            <div class="fundo yellow animationPosition">Amarelo</div>
+        </section>
+
+        <hr>
+
+        <h2>Content</h2>
+        <section>
+            <div class="fundo blue animationContent"></div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+    img,
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        text-align: justify;
+    }
+    
+    html {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .container {
+    margin: 0 auto;
+    width: 70.2781%;
+    }
+    
+        h1 {
+        font-size: 2em; /* 32px / 16px */
+        }
+    
+        .brief {
+        margin: 1% 0;
+        }
+    
+        .content {
+        margin: 1.5625% /* 15 / 960 (valor tirado da largura que o elemento que aninha o .content, isto é, o .container possui) */0; 
+        }
+    
+            .content-main {
+            float: left;
+            width: 61.7708% /* 593px (.content-main) / 960px (.container ou O CONTEXTO)*/;
+            }
+            
+                .hero {
+                margin: 4.2158% /* 25px / 593px */ 0;
+                }
+                
+                    .brief {
+                    margin: 1% /* 5px / 593px */ 0;
+                    } //* = 0.8431%, mas pode ser arredondado para 1%*/
+                
+                .last-contents {
+                font-size: .75em /*12px / 16px*/;
+                }
+            
+                    .last-content-call {
+                    float: left;
+                    margin: 2.5295% 2.5295% 2.5295% 0; /* 15px / 593px */
+                    width: 47.2175% /* 280px / 593px */;
+                    }
+                    
+                        .last-content-call .secondary-title {
+                        margin-bottom: 0;
+                        }
+                        
+                        .last-content-call .brief {
+                        margin: 1.7857% /* 5px / 280px */;
+                        }
+            
+            .content-sidebar {
+            background-color:#F0F0F0;
+            float: right;
+            padding: 1.0416% /* 10px / 960px */;
+            /*width: 33.5416%*/ /* 322px / 960px */ ;
+
+            position: absolute;
+            left: 65%;
+            bottom: 10%;
+            position: fixed;
+            }
+
+                .main-nav {
+                    /*position: absolute;
+                    top: 20%;
+                    left: 70%;*/
+                    background-color: #F9F9F9;
+                }
+                .main-nav ul {
+                list-style-type: none;
+                }
+                
+                    .main-nav li {
+                
+                    float: left;
+                    margin: 4.6583% /* 15 / 322px */;
+                    outline: 1px solid #DEDEDE;
+                    text-align: center;
+                    width: 40.3726%; /* 130px / 322px */
+                    }
+                    
+                        .main-nav a {
+                        display: block;
+                        padding: 7.6923% /* 10px / 130px */;
+                        text-decoration: none;
+                        }
+            
+        .main-footer {
+        background-color: #F0F0F0;
+        clear: both;
+        float: left;
+        font-size: .75em /* 12px / 16px */;
+        margin: 1.5625% 0;
+        padding: 1.5625% /* 15px / 960*/;
+        text-align: center;
+        width: 100%;
+        }
+
+    
+    

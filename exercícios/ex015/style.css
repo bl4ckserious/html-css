@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    background-color: aquamarine;
+    font-family: cursive;
+    text-align: justify;
+    font-size: 17px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h1 {
+    color: rgb(224, 70, 70);
+    font-size: 1.6em;
+    background-color: rgb(226, 221, 222);
+    text-align:center;
+}
+h2 {
+    color: rgb(241, 132, 150);
+    font-size: 1.4em;
+    background-color: rgb(226, 221, 222);
+    text-align:center;
+}
+h3 {
+    color: rgb(241, 132, 150);
+    font-size: 1.3em;
+    background-color: rgb(226, 221, 222);
+    text-align:center;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}

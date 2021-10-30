@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'NetSans';
+    src: url('fontes/netflix-sans-cufonfonts/NetflixSansRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NetSansBold';
+    src: url('fontes/netflix-sans-cufonfonts/NetflixSansBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body { 
+    font-family: 'NetSans', sans-serif;
+}
+
+.container-principal {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url("imagens/bg.jpg") center center/cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: color;
+}
+
+
+
+.header1 {
+    width: 100%;
+    padding: 2.1961% 4.3923%;
+    display: inline-flex;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.493),transparent);
+    
+    text-align: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0px;
+}
+
+.content-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 3.6603%;
+}
+
+.menu {
+    display: flex;
+
+    color: white;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.lang {
+    display: flex;
+    margin-right: 2.9282% /*40px / 1366px*/;
+    border: 1px solid white;
+    padding: 10px /* 10px / 1366*/;
+
+    cursor: pointer;
+}
+
+.logo-net {
+    width: 140px /* 140px / 1366*/;
+    display: block;
+}
+
+.globe {
+    margin-top: -4px;
+    margin-right: 2px;
+    display: block;
+}
+
+.entrar {
+    padding: 10px;
+    background-color: #E50914;
+    border-radius: 3px;
+    width: 60px;
+    text-align: center;
+}
+
+/* MAIN PRINCIPAL */
+.superior {
+    text-align: center;
+
+    
+}
+
+.superior h1 {
+    font-family: 'NetSansBold';
+    font-size: 3em;
+    margin-bottom: 20px;
+    width: 500px;
+}
+
+.superior h2 {
+    margin-bottom: 35px;
+    font-weight: normal;
+}
+
+input {
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+}
+
+input:focus { /* Chrome/Opera/Safari */
+    font-size: 200px;
+}
+
+.botao {
+    position: relative;
+}
+
+button {
+    width: 35%;
+    height: 55px;
+    background-color: #E50914;
+    border: 0px solid transparent;
+    color: white;
+    font-family: 'NetflixSansBold';
+    font-size: 1.8em;
+
+    position: absolute;
+    top: 29px;
+    left: 371px;
+}
+
+button:hover {
+    background-color: #fa0a16;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,113 @@
+ <body>
+        <header>
+            <h1>Magrão Lanches</h1>
+            <p>Soparia, Restaurante e Pizzaria.</p>
+        </header>
+        <nav>
+            <ul></ul>
+        </nav>
+
+        <main class="content">
+            <div class="slider">
+                <ul>
+                    <li><img src="imagens/file-chapa.jpg" class="img"></li>
+                    <li><img src="imagens/hamburguer.jpg" class="img"></li>
+                    <li><img src="imagens/pizza1.jpg" class="img"></li>
+                    <li><img src="imagens/sopa.jpg" class="img"></li>
+                </ul>
+            </div>
+        </main>
+        
+       <!--<footer>
+            <p>Criado por <strong>Luccas Fontes</strong></p>
+        </footer>--> 
+    </body>
+</html>
+
+
+////////////////////////////
+
+.header {
+    height: 30px;
+    border-radius: 10px 10px 0px 0px;
+    background-color:var(--red);
+
+    margin: -10px -10px 20px -10px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.section {
+    animation: cardapio .8s linear;
+    position: relative;
+    
+}
+
+
+#cardapio {
+    max-width: 600px;
+    background-color: var(--cor1);
+    margin-top: 2%;
+    margin-left: 2%;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.37);
+}
+
+.preco {
+    background-color: black;
+    color: white;
+    padding: 1px 5px;
+    font-weight: bold;
+}
+
+li {
+    margin: 8px;
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Gochi Hand', cursive;
+    font-weight: normal;
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+
+footer {
+  margin-bottom: 0px;
+  margin-top: 50px;
+  background-color: var(--cor2);
+  text-align: center;
+  
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.89);
+}
+
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 100%;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+.img {
+    width: 100%;
+    height: 100%;
+}

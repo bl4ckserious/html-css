@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(43, 40, 40);
+    color: white;
+    text-align: center;
+    font-family:cursive;
+    font-style: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    
+}
+
+img {
+    width: 350px;
+    margin: 5px;
+   
+}
