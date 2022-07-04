@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+
+    <style>
+        .square {
+            position: absolute;
+            border: 1px dashed black;
+            height: 50%;
+            width: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url(https://gustavoguanabara.github.io/images/mascote-html5.png);
+            background-size: 100px;
+            background-repeat: no-repeat;
+            overflow: hidden;
+
+            animation: movein 4s infinite linear;
+        }
+
+        @keyframes movein {
+            0% {
+                background-position: left top;
+            }
+
+            16.5% {
+                background-position: right top; 
+            }
+
+            33% {
+                background-position: right bottom;
+            }
+
+            49.5% {
+                background-position: left bottom;
+            }
+
+            66% {
+                background-position: left top;
+            }
+
+            82.5% {
+                background-position: right bottom;
+            }
+
+            100% {
+                background-position: left top;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="square">
+       
+    </div>
+</body>
+</html>
